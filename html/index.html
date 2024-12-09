@@ -3,88 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full Stack Developer Portfolio - VinnaCodes">
-    <title>VinnaCodes - Full Stack Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vinnarasu P - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4b0082;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        .content {
+            padding: 3rem;
+            background-color: #fff;
+        }
+        .projects, .about, .contact, .skills, .achievements {
+            margin-bottom: 3rem;
+        }
+        .projects h2, .about h2, .contact h2, .skills h2, .achievements h2 {
+            color: #4b0082;
+            text-transform: uppercase;
+        }
+        .projects a, .contact a, .skills a, .achievements a {
+            color: #4b0082;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4b0082;
+            color: white;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+        .dark-mode header {
+            background-color: #222;
+        }
+        .dark-mode a {
+            color: #ffd700;
+        }
+        .dark-mode footer {
+            background-color: #222;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button-container button {
+            background-color: #4b0082;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button-container button:hover {
+            background-color: #3b0072;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <h1>Vinnarasu P</h1>
+        <p>Aspiring Full Stack Developer</p>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <div class="intro">
-            <h1>Hello, I'm [Your Name]</h1>
-            <p>Full Stack Developer | Web Enthusiast</p>
-            <p>Welcome to my portfolio website, <strong><a href="https://vinnacodes.com" target="_blank">VinnaCodes.com</a></strong>.</p>
+    <div class="content">
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Vinnarasu P, an aspiring full stack developer passionate about Java, SQL, and web development. I am dedicated to solving problems through code and am eager to contribute my skills to dynamic projects. With a strong foundation in programming and web technologies, I’m ready to take on new challenges in software development.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <p>Here are some key projects I have worked on:</p>
+            <ul>
+                <li><a href="https://yourstory.com/2019/08/smart-india-hackathon-students-tamil-na" target="_blank">Self Charging Fans (Smart India Hackathon 2019)</a> - A project focusing on energy-saving solutions for rural areas using self-charging mechanisms with renewable energy. Our team won the title for this project.</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <p>I have a range of skills in software development, including:</p>
+            <ul>
+                <li>Java Programming</li>
+                <li>SQL (Structured Query Language)</li>
+                <li>HTML & CSS (Frontend Development)</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements">
+            <h2>Achievements</h2>
+            <p>I have received recognition for my work and achievements:</p>
+            <ul>
+                <li>Winner of the 2019 Smart India Hackathon for the "Self Charging Fans" project.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to collaborate or discuss projects, feel free to reach out:</p>
+            <p>Email: <a href="mailto:vinnarasu2000@gmail.com">vinnarasu2000@gmail.com</a></p>
+            <p>Phone: 9360881096</p>
+            <p>GitHub: <a href="https://github.com/vinnacodes" target="_blank">github.com/vinnacodes</a></p>
+            <p>LeetCode: <a href="https://leetcode.com/Vinnacodes" target="_blank">leetcode.com/Vinnacodes</a></p>
+        </section>
+
+        <!-- Dark Mode Button -->
+        <div class="button-container">
+            <button id="darkModeToggle">Toggle Dark Mode</button>
         </div>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm a passionate Full Stack Developer with a focus on building scalable, user-friendly applications. 
-            I have experience in both front-end and back-end technologies, including HTML, CSS, JavaScript, Node.js, 
-            React, and MongoDB.
-        </p>
-        <h3>Skills & Technologies</h3>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Angular, Vue.js</li>
-            <li>Node.js, Express.js</li>
-            <li>MongoDB, PostgreSQL</li>
-            <li>Git, GitHub, Version Control</li>
-            <li>Responsive Web Design</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <!-- Example Project 1 -->
-            <div class="project">
-                <img src="https://via.placeholder.com/300" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>A brief description of your project. What technologies did you use? What did you learn?</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-
-            <!-- Example Project 2 -->
-            <div class="project">
-                <img src="https://via.placeholder.com/300" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>A brief description of your project. What was the problem you solved with this project?</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to work together or just want to say hello, feel free to reach out!</p>
-        <form>
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+    </div>
 
     <footer>
-        <p>&copy; 2024 VinnaCodes. All rights reserved. | <a href="https://vinnacodes.com">vinnacodes.com</a></p>
+        <p>&copy; 2024 Vinnarasu P. All Rights Reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
