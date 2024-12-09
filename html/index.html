@@ -3,14 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinnacodes-Home</title>
+    <meta name="description" content="Full Stack Developer Portfolio - VinnaCodes">
+    <title>VinnaCodes - Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to my site.</h1>
-        <h1> About me</h1>
-
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
+    <section id="home">
+        <div class="intro">
+            <h1>Hello, I'm [Your Name]</h1>
+            <p>Full Stack Developer | Web Enthusiast</p>
+            <p>Welcome to my portfolio website, <strong><a href="https://vinnacodes.com" target="_blank">VinnaCodes.com</a></strong>.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate Full Stack Developer with a focus on building scalable, user-friendly applications. 
+            I have experience in both front-end and back-end technologies, including HTML, CSS, JavaScript, Node.js, 
+            React, and MongoDB.
+        </p>
+        <h3>Skills & Technologies</h3>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Angular, Vue.js</li>
+            <li>Node.js, Express.js</li>
+            <li>MongoDB, PostgreSQL</li>
+            <li>Git, GitHub, Version Control</li>
+            <li>Responsive Web Design</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <!-- Example Project 1 -->
+            <div class="project">
+                <img src="https://via.placeholder.com/300" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A brief description of your project. What technologies did you use? What did you learn?</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+
+            <!-- Example Project 2 -->
+            <div class="project">
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A brief description of your project. What was the problem you solved with this project?</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to work together or just want to say hello, feel free to reach out!</p>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 VinnaCodes. All rights reserved. | <a href="https://vinnacodes.com">vinnacodes.com</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
