@@ -13,6 +13,7 @@
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
+            scroll-behavior: smooth;
         }
         header {
             background-color: #4b0082;
@@ -24,6 +25,7 @@
         header h1 {
             font-size: 3rem;
             margin: 0;
+            animation: fadeIn 2s;
         }
         header p {
             font-size: 1.2rem;
@@ -49,17 +51,18 @@
             padding: 3rem;
             background-color: #fff;
         }
-        .projects, .about, .contact, .skills, .achievements {
+        section {
             margin-bottom: 3rem;
         }
-        .projects h2, .about h2, .contact h2, .skills h2, .achievements h2 {
+        h2 {
             color: #4b0082;
             text-transform: uppercase;
         }
-        .projects a, .contact a, .skills a, .achievements a {
-            color: #4b0082;
-            text-decoration: none;
-            font-weight: bold;
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
         }
         footer {
             text-align: center;
@@ -98,6 +101,38 @@
         .button-container button:hover {
             background-color: #3b0072;
         }
+        .skills ul li {
+            position: relative;
+            padding: 5px 0;
+        }
+        .skills ul li::after {
+            content: '';
+            display: block;
+            height: 8px;
+            background-color: #4b0082;
+            width: 0;
+            transition: width 1s ease;
+        }
+        .skills ul li[data-skill="80"]::after {
+            width: 80%;
+        }
+        .skills ul li[data-skill="90"]::after {
+            width: 90%;
+        }
+        .skills ul li[data-skill="75"]::after {
+            width: 75%;
+        }
+        .skills ul li[data-skill="70"]::after {
+            width: 70%;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
@@ -109,7 +144,6 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -117,49 +151,36 @@
 
     <div class="content">
         <!-- About Section -->
-        <section id="about" class="about">
+        <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I'm Vinnarasu P, an aspiring full stack developer passionate about Java, SQL, and web development. I am dedicated to solving problems through code and am eager to contribute my skills to dynamic projects. With a strong foundation in programming and web technologies, I’m ready to take on new challenges in software development.</p>
+            <p>Hello! I'm Vinnarasu P, an aspiring full stack developer passionate about Java, SQL, and web development. Dedicated to solving problems through code and eager to contribute my skills to dynamic projects.</p>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="projects">
+        <section id="projects">
             <h2>Projects</h2>
-            <p>Here are some key projects I have worked on:</p>
             <ul>
-                <li><a href="https://yourstory.com/2019/08/smart-india-hackathon-students-tamil-na" target="_blank">Self Charging Fans (Smart India Hackathon 2019)</a> - A project focusing on energy-saving solutions for rural areas using self-charging mechanisms with renewable energy. Our team won the title for this project.</li>
+                <li><a href="https://yourstory.com/2019/08/smart-india-hackathon-students-tamil-na" target="_blank">Self Charging Fans (Smart India Hackathon 2019)</a></li>
             </ul>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="skills">
+        <section id="skills">
             <h2>Skills</h2>
-            <p>I have a range of skills in software development, including:</p>
             <ul>
-                <li>Java Programming</li>
-                <li>SQL (Structured Query Language)</li>
-                <li>HTML & CSS (Frontend Development)</li>
-                <li>Problem Solving</li>
-            </ul>
-        </section>
-
-        <!-- Achievements Section -->
-        <section id="achievements" class="achievements">
-            <h2>Achievements</h2>
-            <p>I have received recognition for my work and achievements:</p>
-            <ul>
-                <li>Winner of the 2019 Smart India Hackathon for the "Self Charging Fans" project.</li>
+                <li data-skill="90">Java Programming</li>
+                <li data-skill="80">SQL</li>
+                <li data-skill="75">HTML & CSS</li>
+                <li data-skill="70">Problem Solving</li>
             </ul>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact">
+        <section id="contact">
             <h2>Contact Me</h2>
-            <p>If you'd like to collaborate or discuss projects, feel free to reach out:</p>
             <p>Email: <a href="mailto:vinnarasu2000@gmail.com">vinnarasu2000@gmail.com</a></p>
             <p>Phone: 9360881096</p>
             <p>GitHub: <a href="https://github.com/vinnacodes" target="_blank">github.com/vinnacodes</a></p>
-            <p>LeetCode: <a href="https://leetcode.com/Vinnacodes" target="_blank">leetcode.com/Vinnacodes</a></p>
         </section>
 
         <!-- Dark Mode Button -->
