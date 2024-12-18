@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do list</title>
+
+    <style>
+      .body {
+      }
+
+      .wrapper {
+        background-color: cadetblue;
+        position: relative;
+        left: 30%;
+        border: 1px solid black;
+        width: 60%;
+        height: 400px;
+        text-align: center;
+
+        border-radius: 10px;
+      }
+      input {
+        margin: 20px;
+      }
+      select {
+        position: relative;
+        left: -20px;
+      }
+
+      textarea {
+        position: absolu;
+        top: 10px;
+      }
+      .task1 {
+        border: 1px solid black;
+        display: block;
+        color: azure;
+      }
+      .dlbtn{
+        display: inline;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Hello Goodmorning</h1>
+
+      <div class="box2">
+        <form action="">
+          <!-- <select name="task" id="taskip">
+
+            <option value="study">study</option>
+            <option value="work">work</option>
+            <option value="meditation"> Meditaion</option>
+            <option value="diet"> Diet</option>
+            <option value="health">Health</option> -->
+          <!-- <option value="thers" onclick="">Others</option> mmm -->
+          <!-- </select> -->
+          <textarea name="" id="description"></textarea>
+
+          <span>
+            <button id="btn">ADD TASK</button>
+          </span>
+        </form>
+      </div>
+    </div>
+    <script>
+
+      if (taskcontent ===""){PLEASE ENTER THE TASK...}
+      else{
+      let addbtn = document.getElementById("btn");
+      addbtn.addEventListener("click", fun);
+      let taskcontent = document.getElementById("description").value;
+    
+     
+      event.preventDefault(); // Prevent form submission
+      
+      
+      
+      function fun() 
+      {a
+        let resultdiv = document.createElement("div");
+        let delbtn = document.createElement("button");
+
+        let pardiv = document.getElementById("wrapper");
+        pardiv.appendChild(resultdiv);
+        resultdiv.appendChild(delbtn);
+
+        resultdiv.setAttribute("class", "task1");
+        delbtn.setAttribute("class","dlbtn")
+        delbtn.innerHTML="Delete task"
+
+        let taskcontent = document.getElementById("description").value;
+        resultdiv.innerHTML = taskcontent;
+      }
+    }
+      
+    </script>
+  </body>
+</html>
