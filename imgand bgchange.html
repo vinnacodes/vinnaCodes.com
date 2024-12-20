@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    .box
+{
+ border: 2px solid black;
+  border-radius: 10px ;
+
+
+}
+
+.body{background-color: rgb(241, 241, 241);}
+</style>
+</head>
+<body class="body">
+    
+<div id="box">
+
+    <h1>hello</h1>
+    <img id="photo" src="cars/car1.jpg"  height="300px" width="400px">
+
+    <button id="btn"> change</button>
+
+
+
+</div>
+
+<script>
+    let phot = document.getElementById("photo");
+    let bg = document.getElementsByTagName("body")[0];
+
+    function changer() {
+        let newimg = "cars/car2.jpg";
+        let newcolor = "Black";
+        phot.setAttribute("src", newimg); // Corrected to set the image source
+        bg.style.backgroundColor = newcolor; // Corrected to change background color
+    }
+
+    let btn = document.getElementById("btn");
+    function fun() {
+        setTimeout(changer, 3000); // 3-second delay
+    }
+
+    btn.addEventListener("click", fun);
+</script>
+
+
+</body>
+</html>
